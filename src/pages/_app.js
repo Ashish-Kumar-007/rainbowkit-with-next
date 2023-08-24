@@ -36,11 +36,11 @@ const wagmiConfig = createConfig({
 })
 
 export default function App({ Component, pageProps }) {
-  return 
+  return (
    <WagmiConfig config={wagmiConfig}>
       <RainbowKitProvider chains={chains}>
         <Component {...pageProps} />
       </RainbowKitProvider>
     </WagmiConfig>
-
+)
 }
